@@ -6,7 +6,7 @@
 // meteor test-packages ./
 Package.describe({
     summary: "crypto-js for meteor",
-    author: "",
+    author: "Jeff Mott",
     home: "https://code.google.com/p/crypto-js/#Quick-start_Guide",
     version: "3.1.2"
 });
@@ -24,6 +24,7 @@ Package.on_use(function (api) {
     api.add_files([
         'lib/_boot.js',
         'lib/md5.js',
+        'lib/sha1.js',
 
         'lib/exports.js'
     ], both);
@@ -46,4 +47,5 @@ Package.on_use(function (api) {
 Package.on_test(function (api) {
     api.use(['CryptoJS', 'tinytest', 'test-helpers'], both);
     api.add_files('test/md5.js', both);
+    api.add_files('test/sha1.js', both);
 });
