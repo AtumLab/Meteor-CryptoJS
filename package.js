@@ -25,6 +25,9 @@ Package.on_use(function (api) {
         'lib/_boot.js',
         'lib/md5.js',
         'lib/sha1.js',
+        'lib/sha256.js',
+        'lib/sha512.js',
+        'lib/sha3.js',
 
         'lib/exports.js'
     ], both);
@@ -48,4 +51,7 @@ Package.on_test(function (api) {
     api.use(['CryptoJS', 'tinytest', 'test-helpers'], both);
     api.add_files('test/md5.js', both);
     api.add_files('test/sha1.js', both);
+    api.add_files('test/sha256.js', both);
+    api.add_files('test/sha512.js', both);
+    api.add_files('test/sha3.js', both);
 });

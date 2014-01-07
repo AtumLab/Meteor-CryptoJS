@@ -1,5 +1,5 @@
 Tinytest.add('sha1', function(testTiny){
-	//http://www.sha1-online.com/
+    //http://www.sha1-online.com/
     var hash = CryptoJS.SHA1("Message");
     testTiny.equal(hash.toString(), '68f4145fee7dde76afceb910165924ad14cf0d00', "md5 generator fail");
     hash = CryptoJS.SHA1("hello");
