@@ -28,6 +28,7 @@ Package.on_use(function (api) {
         'lib/sha256.js',
         'lib/sha512.js',
         'lib/sha3.js',
+        'lib/ripemd160.js',
 
         'lib/exports.js'
     ], both);
@@ -54,4 +55,6 @@ Package.on_test(function (api) {
     api.add_files('test/sha256.js', both);
     api.add_files('test/sha512.js', both);
     api.add_files('test/sha3.js', both);
+    api.add_files('test/ripemd160.js', both);
+
 });
